@@ -17,7 +17,7 @@ app.use(express.json({ limit: '10mb' }))
 app.use(cors())
 
 mongoose
-    .connect(process.env.MONGO_URL, {
+    .connect("mongodb+srv://database:1234@cluster0.zv687wo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
